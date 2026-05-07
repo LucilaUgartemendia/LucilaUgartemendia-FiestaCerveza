@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="icon" href="./imagenes/CervezaChop.svg"> <!-- FAVICON -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./contacto.html">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img width="135px" src="./imagenes/FiestaCerveza3.svg" alt="logo"></a>
+        <nav>
+            <a href="./index.html">INICIO</a>
+            <a href="./grilla.html">GRILLA</a>
+            <a href="./preguntas.html">PREGUNTAS</a>
+            <a href="./contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+    <!-- ------------------------------------------------------------------------------ -->
+
+
+    <main>
+
+
+        <section class="contenedor">
+            <form class="contenido" action="bienvenidoClub.html">
+                <!-- method="post" envía los datos en html pero no funciona con live server-->
+                <!-- ESTE ES EL ACTION -->
+                <fieldset>
+                    <legend><strong>REALIZAR UNA CONSULTA</strong></legend>
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <label>
+                            Nombre y Apellido
+                            <input id="" required placeholder="Nombre Apellido" type="text" name="nombre">
+                        </label>
+                        <label>
+                            Correo Electrónico
+                            <input placeholder="email@dominio.com" required type="email" name="mail" id="">
+                        </label>
+                        <label>
+                            Teléfono Celular
+                            <input placeholder="(3445) 00 0000" required type="number" name="mail" id="">
+                        </label>
+                    </fieldset>
+                    <fieldset class="colform">
+                        <legend>¿Por dónde nos contactamos?</legend>
+                        <label>Whatsapp<input type="checkbox" name="Whatsapp" id=""></label>
+                        <label>E-Mail<input type="checkbox" name="Mail" id=""></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Motivo de consulta</legend>
+                        <textarea maxlength="100" placeholder="Dejar un comentario" name="" id=""></textarea>
+                    </fieldset>
+                    <div class="boton">
+                        <button type="reset">CANCELAR</button>
+                        <button type="submit">ENVIAR</button> <!-- submit te manda al action  -->
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+            <div class="contenido">
+                <h2>Motivos para contactarse</h2>
+                <ul>
+                    <li>Quiero poner mi puesto cervecero</li>
+                    <li>Quiero poner mi stand en la feria</li>
+                    <li>Quiero ser parte de la grilla musical</li>
+                    <li>Quiero tomar fotos del evento</li>
+                    <li>Quiero patrocinar/cubrir el evento</li>
+                    <li>Otro motivo específico</li>
+                </ul>
+                <p>En caso de no referirse a una consulta relacionada al evento, contactar con el mail o número del Municipio de Santa Anita</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <footer>
+        <article style="margin: 2% 10%;" class="contenedor">
+           <a target="_blank" class="contenido" href="https://www.instagram.com/fiestadelacerveza_santaanita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Fiesta de la Cerveza</a></div>
+           <a target="_blank" class="contenido" href="https://www.instagram.com/muni.santa.anita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Santa Anita instagram</a></div>
+            
+            <a target="_blank" class="contenido" href="https://www.facebook.com/people/Municipio-de-Santa-Anita/100064312250298/#">Santa Anita facebook</a></div>
+            <a target="_blank" class="contenido" href="https://santaanita.gob.ar/inicio/principal">Santa Anita sitio web</a></div>  
+        </article>
+        <p>Web de <a  target="_blank" style="text-decoration:underline;" href="https://www.instagram.com/luli.u.png?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Luli</a> - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
