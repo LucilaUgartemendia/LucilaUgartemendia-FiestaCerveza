@@ -1,5 +1,4 @@
-
-main{
+main {
     height: 80vh;
 }
 
@@ -14,7 +13,7 @@ form {
 
 button {
     width: 48%;
-    color:#EB008B;
+    color: #EB008B;
     border-radius: 15PX;
     border-color: aliceblue;
     font-weight: bolder;
