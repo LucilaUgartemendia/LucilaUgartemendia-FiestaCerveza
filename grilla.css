@@ -1,0 +1,85 @@
+/* 
+PARA EL TP2
+
+
+
+.cajaGrid {
+    width: 100%;
+    height: 100%;
+    margin-top: 13%;
+    margin-bottom: 20%;
+    display: grid;
+    aspect-ratio: 4 / 5;
+    justify-items: center;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 4.25fr 4.75fr 1fr 6.25fr 9.5fr;
+    grid-template-areas:
+        "jonathan joseph jotaro caballo"
+        "josuke giorno jolyne caballo"
+        "johnny giorno jodio dio"
+        "johnny josuke8 jodio dio"
+        "todos todos todos todos";
+    gap: 3%;
+
+}
+
+
+
+
+#jonathan {
+    grid-area: jonathan;
+    cursor: help;
+}
+
+#joseph {
+    grid-area: joseph;
+    cursor: help;
+}
+
+#jotaro {
+    grid-area: jotaro;
+    cursor: help;
+}
+
+#josuke {
+    grid-area: josuke;
+    cursor: help;
+}
+
+#giorno {
+    grid-area: giorno;
+    cursor: help;
+}
+
+#jolyne {
+    grid-area: jolyne;
+    cursor: help;
+}
+
+#johnny {
+    grid-area: johnny;
+    cursor: help;
+}
+
+#josuke8 {
+    grid-area: josuke8;
+    cursor: help;
+}
+
+#jodio {
+    grid-area: jodio;
+    cursor: help;
+}
+
+#caballo {
+    grid-area: caballo;
+}
+
+#dio {
+    grid-area: dio;
+}
+
+#todos {
+    grid-area: todos;
+
+} */
