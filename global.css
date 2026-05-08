@@ -108,7 +108,7 @@ h1 {
     }
 
     50% {
-        letter-spacing: 3vw;
+        letter-spacing: 2.5vw;
         filter: blur(3px);
     }
 
@@ -127,7 +127,7 @@ h1:hover {
     }
 
     50% {
-        letter-spacing: 3vw;
+        letter-spacing: 2.5vw;
         filter: blur(3px);
     }
 
