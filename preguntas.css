@@ -1,12 +1,83 @@
 .mapa {
-    border-radius: 5%;
-    border-color: #280e3f;
-    border-width: medium;
+    border-radius: 20px;
+    border: 4px solid #280e3f;
     width: 100%;
     height: 50vh;
+    overflow: hidden;
 }
 
 
 .contenido {
     margin: 0;
+}
+
+
+.table {
+    --bs-table-striped-color: #280e3f;
+    --bs-table-striped-bg: rgba(40, 14, 63, 0.08);
+    --bs-table-active-color: #280e3f;
+    --bs-table-active-bg: rgba(40, 14, 63, 0.08);
+    --bs-table-hover-color: #280e3f;
+    --bs-table-hover-bg: rgba(40, 14, 63, 0.08);
+    width: 100%;
+    margin-bottom: 0.8rem;
+    color: #280e3f;
+    vertical-align: top;
+    border-color: #280e3f;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+#alert {
+    font-size: 1rem;
+    background-color: rgba(253, 173, 0, 0.08);
+    border-color: #fdad00;
+    color: #fdad00;
+
+    btn-close:hover {
+        color: #280e3f;
+    }
+}
+
+#info {
+    font-size: 1rem;
+    background-color: rgba(0, 101, 253, 0.08);
+    border-color: #0065fd;
+    color: #0065fd;
+}
+
+
+.accordion {
+    border: 0;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 0;
+}
+
+.accordion-button {
+    margin-top: 3%;
+    font-size: 1rem;
+    color: #280e3f !important;
+    background-color: rgba(40, 14, 63, 0.08);
+    border: 0;
+    border-radius: 10px;
+    border-color: #280e3f;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #280e3f;
+    background-color: #fdad0033;
+    box-shadow: inset -3px -3px 0 #fdad00;
+}
+
+.accordion-button:focus {
+    border-color: #fdad0033;
+    /*box-shadow: 0 0 0 .25rem #fdad0033; */
+    box-shadow: inset -3px -3px 0 #fdad00;
+}
+
+.accordion-button::after {
+    color: #280e3f;
 }

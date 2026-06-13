@@ -1,3 +1,15 @@
+/* 
+9pt = 12px = 0.75rem
+10.5pt = 14px = 0.875rem
+12pt = 16px = 1rem
+13.5pt = 18px = 1.125rem
+15pt = 20px = 1.25rem
+18pt = 24px = 1.5rem
+24pt = 32px = 2rem
+30pt = 40px = 2.5rem
+ */
+
+
 * {
     padding: 0;
     margin: 0 auto;
@@ -30,6 +42,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
+        img{
+    border-radius: 0;
+    }
 }
 
 
@@ -40,7 +55,7 @@ nav {
     font-weight: 500;
     font-family: "Slackey", sans-serif;
     letter-spacing: 1px;
-    font-size: 14pt;
+    font-size: 1.3rem;
 }
 
 
@@ -60,7 +75,7 @@ a:hover {
 
 main {
     margin: 0% 10%;
-    font-size: 16pt;
+    font-size: 1rem;
     margin-top: 15%;
 }
 
@@ -81,13 +96,10 @@ main {
 }
 
 
-img {
-    border-radius: 5%;
-    margin: 2% 0%;
+
+img{
+   border-radius: 20px;
 }
-
-
-
 
 
 
@@ -97,7 +109,7 @@ img {
 /* ------------------------------------------------------------------------------------------- */
 /* CON AYUDA DE CHAT GPT */
 h1 {
-    font-size: 30pt;
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
     animation: estira 3s ease-in-out 0.8s 1 forwards;
@@ -141,10 +153,15 @@ h1:hover {
 
 h2 {
     text-transform: uppercase;
-    font-size: 24pt;
+    font-size: 2rem;
     font-weight: 900;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
 
 
 
@@ -216,13 +233,49 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #280e3f;
+    --bs-gray-dark: #280e3f;
+    --bs-primary: #280e3f;
+    --bs-secondary: #280e3f;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #280e3f;
+}
+
+
 /* ------------------------------------------------------------------------------------------- */
 footer {
-    margin-top: 5%;
+    margin-top: 15%;
     padding: 2% 0%;
     align-items: center;
     display: flex;
     justify-content: space-between;
     background-color: #280e3f;
     color: #ffffff;
+
+    img{
+    border-radius: 0;
+    }
 }

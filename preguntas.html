@@ -74,22 +74,28 @@
                         </tr>
                     </table>
 
-                    <div class="alert alert-info alert-dismissible fade show">
+                    <div id="info" class="alert alert-info alert-dismissible fade show">
                         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         <strong>Info!</strong> Se debe venir con vehículo propio, dado que la terminal de
                         Micros más cercana es a 40km en Basavilbaso.
                     </div>
-                    <div class="alert alert-warning alert-dismissible fade show">
+                    <div id="alert" class="alert alert-warning alert-dismissible fade show">
                         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        <strong>¡Cuidado con los pozos de la ruta 20!</strong>
-                        <p>Manejar con precaución.</p>
+                        <strong>¡Cuidado con los pozos de la ruta 20!</strong> Manejar con precaución.
                     </div>
                 </div>
         </section>
 
 
-        <section class="contenedor">
-            <div class="contenido">
+
+
+
+
+
+
+        <section class="row p-3 justify-content-between" style="margin-bottom: 15%;">
+
+            <div class="col-md-7">
                 <h2>preguntas frecuentes</h2>
                 <div class="accordion">
                     <div class="accordion-item">
@@ -169,27 +175,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-
-                <div class="contenido">
+            <div class="col-md-4">
+                <h2>la más importante</h2>
+                <div class=" mt-4 accordion">
                     <div class="accordion-item">
                         <h3 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                ¿HABRÁ ESPICHE DE CERVEZA?
+                                <strong>¿HABRÁ ESPICHE DE CERVEZA?</strong>
                             </button>
                         </h3>
                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                POR SUPUESTO!!!
+                               <strong>POR SUPUESTO!!!</strong> 
                                 <img width="100%" src="./imagenes/espiche.jpeg" alt="espiche de cerveza">
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
         </section>
 
     </main>

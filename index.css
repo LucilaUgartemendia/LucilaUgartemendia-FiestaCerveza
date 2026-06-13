@@ -5,3 +5,15 @@ header {
 main {
     margin-top: 0%;
 }
+
+
+.btn{
+    color:  #ffffff;
+    background-color: #280e3f;
+    }
+
+.btn-primary {
+    color: #ffffff;
+    background-color:  #280e3f;
+    border-color: #280e3f;
+}
