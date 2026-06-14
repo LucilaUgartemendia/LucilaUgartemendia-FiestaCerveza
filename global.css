@@ -310,6 +310,7 @@ footer {
     }
 
     .heroimg {
-        width: 70vw;
+        width: 100vw;
+        margin: 0%;
     }
 }
