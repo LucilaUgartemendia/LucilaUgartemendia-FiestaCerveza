@@ -190,10 +190,11 @@ h3 {
 
 
 .heroimg {
+    border-radius: 0%;
     position: absolute;
     top: 25vh;
     z-index: 900;
-    width: 40%;
+    width: 40vw;
     display: flex;
     margin: 0% 20%;
     filter: drop-shadow(0 10px 20px rgba(21, 6, 36, 0.99));
