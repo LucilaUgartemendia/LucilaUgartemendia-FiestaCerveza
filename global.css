@@ -313,4 +313,10 @@ footer {
         width: 60vw;
         margin: 0%;
     }
+
+    .hero {
+    width: 100vw;
+
+    margin-bottom: 5%;
+}
 }
