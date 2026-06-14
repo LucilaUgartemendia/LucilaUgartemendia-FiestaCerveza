@@ -42,8 +42,8 @@ header {
     justify-content: space-between;
     align-items: center;
 
-        img{
-    border-radius: 0;
+    img {
+        border-radius: 0;
     }
 }
 
@@ -75,7 +75,7 @@ a:hover {
 
 main {
     margin: 0% 10%;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: 15%;
 }
 
@@ -97,8 +97,8 @@ main {
 
 
 
-img{
-   border-radius: 20px;
+img {
+    border-radius: 20px;
 }
 
 
@@ -235,11 +235,6 @@ h3 {
 
 
 
-
-
-
-
-
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -269,13 +264,32 @@ h3 {
 footer {
     margin-top: 15%;
     padding: 2% 0%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     background-color: #280e3f;
     color: #ffffff;
+    font-size: 1rem;
 
-    img{
-    border-radius: 0;
+    img {
+        border-radius: 0;
+    }
+
+    p{
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* -------------------------------------  MEDIA QUERY  --------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+@media (min-width:480px) {
+    h1 {
+        font-size: 2rem;
     }
 }
