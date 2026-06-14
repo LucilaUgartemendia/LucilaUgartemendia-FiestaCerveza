@@ -42,6 +42,7 @@ body {
 
 /* ------------------------------------------------------------------------------------------- */
 header {
+    margin-bottom: 500px;
     position: fixed;
     top: 0;
     left: 0;
@@ -315,7 +316,14 @@ footer {
     }
 
     .hero {
-    width: 80vw;
-    margin-bottom: 5%;
-}
+        margin-bottom: 5%;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .contenedor {
+        display: block;
+    }
 }

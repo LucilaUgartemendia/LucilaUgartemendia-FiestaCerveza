@@ -7,13 +7,13 @@ main {
 }
 
 
-.btn{
-    color:  #ffffff;
+.btn {
+    color: #ffffff;
     background-color: #280e3f;
-    }
+}
 
 .btn-primary {
     color: #ffffff;
-    background-color:  #280e3f;
+    background-color: #280e3f;
     border-color: #280e3f;
 }
