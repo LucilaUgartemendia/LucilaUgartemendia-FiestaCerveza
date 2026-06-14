@@ -308,4 +308,8 @@ footer {
     main {
         margin: 0% 5%;
     }
+
+    .heroimg {
+        width: 70vw;
+    }
 }
