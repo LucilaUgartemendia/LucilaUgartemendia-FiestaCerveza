@@ -8,9 +8,14 @@
 24pt = 32px = 2rem
 30pt = 40px = 2.5rem
  */
+
 @font-face {
     font-family: 'Slackey';
     src: url(./Slackey-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./Montserrat-VariableFont_wght.ttf);
 }
 
 
