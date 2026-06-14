@@ -310,12 +310,12 @@ footer {
     }
 
     .heroimg {
-        width: 60vw;
+        width: 70vw;
         margin: 0%;
     }
 
     .hero {
-    height: 60vh;
+    width: 80vw;
     margin-bottom: 5%;
 }
 }
