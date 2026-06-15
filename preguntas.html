@@ -24,7 +24,7 @@
             <a href="./index.html">INICIO</a>
             <a href="./grilla.html">GRILLA</a>
             <a href="./preguntas.html">PREGUNTAS</a>
-            <a href="./contacto.html">CONTACTO</a>
+            <a href="./tienda.html">TIENDA</a>
         </nav>
     </header>
     <!-- ------------------------------------------------------------------------------ -->
@@ -88,9 +88,8 @@
 
 
 
-
-
-
+        <!-- ------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------ -->
 
 
         <section class="row p-3 justify-content-between" style="margin-bottom: 15%;">
@@ -101,12 +100,11 @@
                     <div class="accordion-item">
                         <h3 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 ¿Precio de las entradas?
                             </button>
                         </h3>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                             <div class="accordion-body">
                                 Todavía no están los precios, recién estarán en diciembre.
                             </div>
@@ -121,8 +119,7 @@
                                 ¿Hay estacionamiento?
                             </button>
                         </h3>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                             <div class="accordion-body">
                                 Sí, a una cuadra del balneario hay dos estacionamientos a cargo de alumnos de 5to año
                                 que
@@ -137,8 +134,7 @@
                                 ¿Qué pasa si llueve?
                             </button>
                         </h3>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                             <div class="accordion-body">
                                 La fiesta sigue en el Salón Municipal.
                             </div>
@@ -152,8 +148,7 @@
                                 ¿Se venden bebidas sin alcohol?
                             </button>
                         </h3>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
                             <div class="accordion-body">
                                 Sí, es un evento familiar. Hay bebidas para todos los gustos.
                             </div>
@@ -167,8 +162,7 @@
                                 ¿Hay opciones sin TACC?
                             </button>
                         </h3>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
                             <div class="accordion-body">
                                 Sí, hay papas fritas, vacío al plato y pizza sin TACC, incluso Cerveza sin glúten.
                             </div>
@@ -188,11 +182,11 @@
                                 <strong>¿HABRÁ ESPICHE DE CERVEZA?</strong>
                             </button>
                         </h3>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                            data-bs-parent="#accordionExample">
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
                             <div class="accordion-body">
                                 <strong>POR SUPUESTO!!!</strong>
-                                <img width="100%" src="./imagenes/espiche.jpeg" alt="espiche de cerveza">
+                                <video autoplay loop width="100%" style="border-radius: 20px;"
+                                    src="./imagenes/espiche.mp4" alt="espiche de cerveza"></video>
                             </div>
                         </div>
                     </div>
@@ -201,9 +195,74 @@
             </div>
         </section>
 
+
+
+        <!-- ------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------ -->
+
+
+        <section class="contenedor" style="margin-bottom: 50vh;">
+            <form class="contenido" action="bienvenidoClub.html">
+                <!-- method="post" envía los datos en html pero no funciona con live server-->
+                <!-- ESTE ES EL ACTION -->
+                <fieldset>
+                    <legend><strong>REALIZAR UNA CONSULTA</strong></legend>
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <label>
+                            Nombre y Apellido
+                            <input id="" required placeholder="Nombre Apellido" type="text" name="nombre">
+                        </label>
+                        <label>
+                            Correo Electrónico
+                            <input placeholder="email@dominio.com" required type="email" name="mail" id="">
+                        </label>
+                        <label>
+                            Teléfono Celular
+                            <input placeholder="(3445) 00 0000" required type="number" name="mail" id="">
+                        </label>
+                    </fieldset>
+                    <fieldset class="colform">
+                        <legend>¿Por dónde nos contactamos?</legend>
+                        <label>Whatsapp<input type="checkbox" name="Whatsapp" id=""></label>
+                        <label>E-Mail<input type="checkbox" name="Mail" id=""></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Motivo de consulta</legend>
+                        <textarea maxlength="100" placeholder="Dejar un comentario" name="" id=""></textarea>
+                    </fieldset>
+                    <div class="boton">
+                        <button type="reset">CANCELAR</button>
+                        <button type="submit">ENVIAR</button> <!-- submit te manda al action  -->
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+
+            <div class="contenido">
+                <h2>Motivos para contactarse</h2>
+                <ul>
+                    <li>Quiero poner mi puesto de cerveza artesanal</li>
+                    <li>Quiero poner mi stand de emprendedor en la feria</li>
+                    <li>Quiero ser parte de la grilla musical</li>
+                    <li>Quiero tomar fotos y videos del evento</li>
+                    <li>Quiero patrocinar/cubrir el evento</li>
+                    <li>Otro motivo específico</li>
+                </ul>
+                <p>En caso de no referirse a una consulta relacionada al evento, contactar con el mail o número del
+                    Municipio de Santa Anita.</p>
+            </div>
+        </section>
+
+
+
     </main>
 
 
+    <!-- ------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------------ -->
     <!-- ------------------------------------------------------------------------------ -->
     <footer>
         <article style="margin: 2% 10%;" class="contenedor">
