@@ -17,3 +17,22 @@ main {
     background-color: #280e3f;
     border-color: #280e3f;
 }
+
+#cuenta {
+    z-index: 1000;
+    display: flex;
+    margin-top: -25vh;
+    font-weight: 500;
+    font-family: "Slackey", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+#imgCuenta{
+      z-index: 900;  
+      
+      margin: 0% 0%;
+      width: 80vw;
+      border-radius: 0%;
+}

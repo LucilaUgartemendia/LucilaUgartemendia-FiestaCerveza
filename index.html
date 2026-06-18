@@ -26,13 +26,47 @@
     </header>
 
     <!-- ------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------------ -->
 
     <div class="hero"></div>
     <main>
         <img class="heroimg" src="./imagenes/logo_amarillo.svg" alt="logo">
         <h1 style="margin-bottom: 10%;">9 DE ENERO DE 2027</h1>
 
+        <!-- ------------------------------------------------------------------------------ -->
+<img id="imgCuenta" src="./imagenes/amarillas/canillas_a.jpg" alt="canillas de cerveza">
 
+
+        <p id="cuenta"></p>
+        <script>
+            var countDownDate = new Date("Jan 9, 2027 19:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="cuenta"
+                document.getElementById("cuenta").innerHTML = days + " DÍAS" + hours + " HS"
+                    + minutes + " MINS" + seconds + " SEGS";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("cuenta").innerHTML = "TERMINÓ LA CUENTA REGRESIVA";
+                }
+            }, 1000);
+        </script>
+
+
+        <!-- ------------------------------------------------------------------------------ -->
         <section class="container mt-5">
             <div class="row  justify-content-between">
 
@@ -79,12 +113,9 @@
         </section>
 
 
-
-
-
     </main>
 
-
+    <!-- ------------------------------------------------------------------------------ -->
     <!-- ------------------------------------------------------------------------------ -->
     <footer>
         <div class="container mt-5">

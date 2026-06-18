@@ -49,6 +49,7 @@
 
 .accordion {
     border: 0;
+        font-size: 1.3rem;
 }
 
 .accordion-item {
@@ -58,7 +59,7 @@
 
 .accordion-button {
     margin-top: 3%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #280e3f !important;
     background-color: rgba(40, 14, 63, 0.08);
     border: 0;

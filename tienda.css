@@ -2,6 +2,16 @@ main {
     height: 100vh;
 }
 
+.nav-item {
+    width: 30%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+
+
+
 
 /* FORMULARIO */
 form {
