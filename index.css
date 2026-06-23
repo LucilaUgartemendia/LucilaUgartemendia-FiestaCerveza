@@ -18,21 +18,96 @@ main {
     border-color: #280e3f;
 }
 
+/* 
+
 #cuenta {
     z-index: 1000;
     display: flex;
-    margin-top: -25vh;
+    justify-content: center;
+    margin-top: -50vh;
     font-weight: 500;
     font-family: "Slackey", sans-serif;
     letter-spacing: 1px;
-    font-size: 3rem;
+        word-spacing: 200%;
+    font-size: 4rem;
     color: #ffffff;
 }
 
-#imgCuenta{
-      z-index: 900;  
-      
-      margin: 0% 0%;
-      width: 80vw;
-      border-radius: 0%;
+#dias {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-family: "Slackey", sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
+    color: #ffffff;
+    word-spacing: 100%;
+}
+ */
+#cuenta,
+#dias {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+
+#cuenta {
+    margin-top: -55vh;
+    font-family: "Slackey", sans-serif;
+    font-size: 5rem;
+    letter-spacing: 1px;
+}
+
+#dias {
+    font-family: "Slackey", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+#cuenta span,
+#dias span {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+#ubi {
+    margin-top: 5vh;
+    z-index: 1000;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#ubi a:hover {
+    color: #ffffff;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+    cursor: hand;
+
+    filter: drop-shadow(0 0 3px #fdad00) drop-shadow(0 0 7px #fdad00);
+}
+
+
+
+
+
+
+
+#imgCuenta {
+    z-index: 900;
+
+    margin: 0% 0%;
+    width: 80vw;
+    border-radius: 0%;
 }

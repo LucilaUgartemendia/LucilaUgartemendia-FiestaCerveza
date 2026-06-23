@@ -92,6 +92,7 @@ main {
 
 
 
+
 .contenedor {
     display: flex;
     column-gap: 5%;
@@ -111,9 +112,6 @@ main {
 img {
     border-radius: 20px;
 }
-
-
-
 
 
 
