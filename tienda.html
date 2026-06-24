@@ -8,8 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        
+
     <link rel="icon" href="./imagenes/3_cerveza.svg"> <!-- FAVICON -->
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./tienda.css">
@@ -17,21 +18,49 @@
 
 <body>
     <header>
-        <a href="./index.html"><img width="135px" src="./imagenes/logo_mixto.svg" alt="logo"></a>
-        <nav>
-            <a href="./index.html">INICIO</a>
-            <a href="./grilla.html">GRILLA</a>
-            <a href="./preguntas.html">PREGUNTAS</a>
-            <a href="./tienda.html">TIENDA</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagenes/logo_mixto.svg" alt="Logo" width="135" class="img-fluid">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./grilla.html">GRILLA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./preguntas.html">PREGUNTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">TIENDA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
+    <!-- ------------------------------------------------------------------------------ -->
     <!-- ------------------------------------------------------------------------------ -->
 
 
     <main>
 
 
-<h2>COMPRAR ENTRADAS</h2>
+        <h2>COMPRAR ENTRADAS</h2>
         <section class="container col-md-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -50,10 +79,10 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="paso1-tab-pane" role="tabpanel" aria-labelledby="paso1-tab"
                     tabindex="0">1</div>
-                <div class="tab-pane fade" id="paso2-tab-pane" role="tabpanel" aria-labelledby="paso2-tab"
-                    tabindex="0">2</div>
-                <div class="tab-pane fade" id="paso3-tab-pane" role="tabpanel" aria-labelledby="paso3-tab"
-                    tabindex="0">3</div>
+                <div class="tab-pane fade" id="paso2-tab-pane" role="tabpanel" aria-labelledby="paso2-tab" tabindex="0">
+                    2</div>
+                <div class="tab-pane fade" id="paso3-tab-pane" role="tabpanel" aria-labelledby="paso3-tab" tabindex="0">
+                    3</div>
             </div>
         </section>
 
@@ -63,36 +92,36 @@
     <!-- ------------------------------------------------------------------------------ -->
     <footer>
         <div class="container mt-5">
-            <div class="row  justify-content-between">
-                <div class="col-md-3">
+            <div class="row justify-content-between gy-4">
+                <div class="col-6 col-md-3">
                     <a target="_blank"
                         href="https://www.instagram.com/fiestadelacerveza_santaanita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                        <img src="./imagenes/SVG/icon logo instagram.svg" width="25px" style="margin-right:10px;"
-                            alt=""> Fiesta de la Cerveza</a>
+                        <img src="./icons/icon logo instagram.svg" width="25px" style="margin-right:10px;" alt="">
+                        Fiesta de la Cerveza</a>
                 </div>
-                <div class="col-md-3">
-                    <a target="_blank"
-                        href="https://www.instagram.com/muni.santa.anita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                        <img src="./imagenes/SVG/icon logo instagram.svg" width="25px" style="margin-right:10px;"
-                            alt=""> Santa Anita instagram</a>
-                </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
                     <a target="_blank"
                         href="https://www.facebook.com/people/Municipio-de-Santa-Anita/100064312250298/#"> <img
-                            src="./imagenes/SVG/icon logo facebook.svg" width="25px" style="margin-right:10px;" alt="">
-                        Santa Anita facebook</a>
+                            src="./icons/icon logo facebook.svg" width="25px" style="margin-right:10px;" alt="">
+                        Santa Anita</a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-md-3">
+                    <a target="_blank"
+                        href="https://www.instagram.com/muni.santa.anita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <img src="./icons/icon logo instagram.svg" width="25px" style="margin-right:10px;" alt=""> Santa
+                        Anita</a>
+                </div>
+                <div class="col-6 col-md-3">
                     <a target="_blank" href="https://santaanita.gob.ar/inicio/principal"> <img
-                            src="./imagenes/SVG/icon logo web.svg" width="25px" style="margin-right:10px;" alt=""> Santa
-                        Anita sitio web</a>
+                            src="./icons/icon logo web.svg" width="25px" style="margin-right:10px;" alt=""> Santa
+                        Anita</a>
                 </div>
             </div>
         </div>
 
         <div class="container mt-5 mb-5">
-            <div class="row  justify-content-between">
-                <div class="col-md-12">
+            <div class="row justify-content-between">
+                <div class="col-md-12 text-center text-md-start">
                     <p>Calle P. E. Becher 409 - Santa Anita - Entre Ríos - CP: 3248</p>
                     <p>Tel: (03445) 497143 / 497205 - E-mail: municipio@santaanita.gob.ar</p>
 
