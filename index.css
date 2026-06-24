@@ -18,33 +18,9 @@ main {
     border-color: #280e3f;
 }
 
-/* 
 
-#cuenta {
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    margin-top: -50vh;
-    font-weight: 500;
-    font-family: "Slackey", sans-serif;
-    letter-spacing: 1px;
-        word-spacing: 200%;
-    font-size: 4rem;
-    color: #ffffff;
-}
 
-#dias {
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    font-family: "Slackey", sans-serif;
-    letter-spacing: 1px;
-    font-size: 4rem;
-    color: #ffffff;
-    word-spacing: 100%;
-}
- */
+
 #cuenta,
 #dias {
     margin: 0 auto;
@@ -73,6 +49,7 @@ main {
     width: 25%;
     display: inline-block;
     text-align: center;
+        filter: drop-shadow(0 5px 10px rgb(8, 2, 14));
 }
 
 
@@ -86,6 +63,7 @@ main {
     font-size: 3rem;
     font-weight: 800;
     color: #ffffff;
+        filter: drop-shadow(0 5px 10px rgb(8, 2, 14));
 }
 
 #ubi a:hover {
@@ -96,7 +74,6 @@ main {
 
     filter: drop-shadow(0 0 3px #fdad00) drop-shadow(0 0 7px #fdad00);
 }
-
 
 
 
@@ -130,4 +107,97 @@ main {
     background-color: #fdad00;
     border-color: #fdad00;
     box-shadow: 0 0 0 .25rem rgb(253, 173, 0, .3);
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* --------------------------          MEDIA QUERIES        ---------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+   #ubi {
+    font-size: 2.5rem;
+   } 
+   
+#cuenta {
+    font-size: 4.5rem;
+    margin-top: -45vh;
+}
+
+#dias {
+    font-size: 3.5rem;
+}
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 993px) {
+   #ubi {
+    font-size: 1.8rem;
+   } 
+   
+#cuenta {
+    font-size: 3.8rem;
+    margin-top: -40vh;
+}
+
+#dias {
+    font-size: 2.8rem;
+}
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 769px) {
+   #ubi {
+    font-size: 1.3rem;
+   } 
+   
+#cuenta {
+    font-size: 3.3rem;
+    margin-top: -30vh;
+}
+
+#dias {
+    font-size: 2.3rem;
+}
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 577px) {
+   #ubi {
+    font-size: 1rem;
+   } 
+   
+#cuenta {
+    font-size: 2.5rem;
+    margin-top: -25vh;
+}
+
+#dias {
+    font-size: 1.5rem;
+}
+
+/* #imgCuenta {
+    min-width: 150vw;
+    overflow: hidden;
+} */
 }
