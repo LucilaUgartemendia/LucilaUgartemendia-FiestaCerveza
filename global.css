@@ -20,6 +20,11 @@
 }
 
 
+main {
+    margin: 0% 10%;
+    font-size: 1.3rem;
+}
+
 
 * {
     padding: 0;
@@ -47,35 +52,45 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1% 0%;
+    padding: 1% 10%;
     background-color: rgb(40, 14, 63, 0.98);
+}
+
+.container-fluid {
+    margin: 0; /* sin margen propio, ya lo da el header */
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.navbar-brand img {
+    border-radius: 0;
+    filter: drop-shadow(0 5px 10px rgb(8, 2, 14));
+}
+
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
-
-
-    img {
-        border-radius: 0;
-    }
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .nav-link {
     color: #ffffff;
-    font-size: 2rem;
     font-family: "Slackey", sans-serif;
+    filter: drop-shadow(0 5px 10px rgb(8, 2, 14));
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .nav-link:hover {
     color: #fdce00;
     transform: translateY(-3px);
     transition: all 0.5s ease-in-out;
-    cursor: hand;
+    cursor: pointer;
 }
+
 
 
 
@@ -93,16 +108,6 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------- */
-
-main {
-    margin: 0% 10%;
-    font-size: 1.3rem;
-    margin-top: 25vh;
-}
-
-@media screen {
-    
-}
 
 
 
@@ -180,6 +185,7 @@ h2 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
+    margin-top: 25vh;
 }
 
 h3 {
@@ -207,11 +213,9 @@ h3 {
     border-radius: 0%;
     position: absolute;
     top: 25vh;
-    z-index: 900;
+    z-index: 800;
     width: 40vw;
-    display: flex;
     margin: 0% 20%;
-    filter: drop-shadow(0 10px 20px rgba(21, 6, 36, 0.99));
 
     -webkit-animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -235,14 +239,14 @@ h3 {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1;
-        filter: blur(0px);
+        filter: blur(0px) drop-shadow(0 10px 20px rgb(8, 2, 14));
     }
 }
 
 @keyframes heroimg {
     0% {
         -webkit-transform: scale(2);
-        transform: scal(2);
+        transform: scale(2);
         opacity: 0;
         filter: blur(50px);
     }
@@ -251,11 +255,9 @@ h3 {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1;
-        filter: blur(0px);
+        filter: blur(0px) drop-shadow(0 10px 20px rgb(8, 2, 14));
     }
 }
-
-
 
 
 
