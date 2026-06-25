@@ -230,13 +230,18 @@
             <h2>REALIZAR UNA CONSULTA</h2>
             <div class="col-md-6 col-12">
                 <h3>Información personal</h3>
-                <div class="row justify-content-between mt-3">
-                    <label for="exampleFormControlInput1" class="form-label col-md-6">Correo Electrónico</label>
-                    <input type="email" class="form-control col-md-6" id="exampleFormControlInput1"
-                        placeholder="nombre@gmail.com">
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+                    <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+                </div>
+                <div class="input-group mt-2">
+                    <span class="input-group-text">Correo Electrónico</span>
+                    <input type="email" id="exampleFormControlInput1" class="form-control"
+                        placeholder="correo@gmail.com">
                 </div>
 
-                <div class="row justify-content-between">
+                <div class="row justify-content-between mt-3">
                     <h3 class="col-md-6">¿Por dónde nos contactamos?</h3>
                     <div class="form-check col-md-3 col-6">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -247,12 +252,14 @@
                         <label class="form-check-label" for="flexCheckDefault">Mail</label>
                     </div>
                 </div>
-                 <h3>Motivo de consulta</h3>
+
                 <div class="mt-3">
+                    <h3>Motivo de consulta</h3>
                     <label for="exampleFormControlTextarea1" class="form-label"></label>
                     <textarea class="form-control" id="exampleFormControlTextarea1"
                         placeholder="Dejar un comentario"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
             </div>
 
             <div class="col-md-5 col-12">
@@ -268,46 +275,8 @@
                 <p>En caso de no referirse a una consulta relacionada al evento, contactar con el mail o número del
                     Municipio de Santa Anita.</p>
             </div>
-
+            
         </section>
-
-        <!-- 
-            <form class="contenido" action="bienvenidoClub.html">
-                <fieldset>
-                    <legend><strong></strong></legend>
-                    <fieldset>
-                        <legend>Información personal</legend>
-                        <label>
-                            Nombre y Apellido
-                            <input id="" required placeholder="Nombre Apellido" type="text" name="nombre">
-                        </label>
-                        <label>
-                            Correo Electrónico
-                            <input placeholder="email@dominio.com" required type="email" name="mail" id="">
-                        </label>
-                        <label>
-                            Teléfono Celular
-                            <input placeholder="(3445) 00 0000" required type="number" name="mail" id="">
-                        </label>
-                    </fieldset>
-                    <fieldset class="colform">
-                        <legend>¿Por dónde nos contactamos?</legend>
-                        <label>Whatsapp<input type="checkbox" name="Whatsapp" id=""></label>
-                        <label>E-Mail<input type="checkbox" name="Mail" id=""></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Motivo de consulta</legend>
-                        <textarea maxlength="100" placeholder="Dejar un comentario" name="" id=""></textarea>
-                    </fieldset>
-                    <div class="boton">
-                        <button type="reset">CANCELAR</button>
-                        <button type="submit">ENVIAR</button>
-                    </div>
-                </fieldset>
-            </form> -->
-
-
-
 
     </main>
 
