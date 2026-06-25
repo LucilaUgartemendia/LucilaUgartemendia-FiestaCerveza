@@ -23,6 +23,8 @@
 main {
     margin: 0% 10%;
     font-size: 1.3rem;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
 }
 
 
@@ -57,7 +59,8 @@ header {
 }
 
 .container-fluid {
-    margin: 0; /* sin margen propio, ya lo da el header */
+    margin: 0;
+    /* sin margen propio, ya lo da el header */
     padding: 0;
     width: 100%;
     max-width: 100%;
@@ -185,7 +188,6 @@ h2 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
-    margin-top: 25vh;
 }
 
 h3 {
@@ -296,6 +298,10 @@ footer {
 
     main {
         margin: 0% 5%;
+    font-size: 1rem;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+
     }
 
     .heroimg {
@@ -335,24 +341,16 @@ footer {
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1200px) {
-
-}
+@media screen and (max-width: 1200px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 993px) {
-
-}
+@media screen and (max-width: 993px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 769px) {
-
-}
+@media screen and (max-width: 769px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 577px) {
-
-}
+@media screen and (max-width: 577px) {}
