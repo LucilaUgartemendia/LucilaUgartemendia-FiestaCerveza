@@ -49,11 +49,11 @@
 
 .accordion {
     border: 0;
-        font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .accordion-item {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 0;
     margin-bottom: 5%;
 }
@@ -104,24 +104,16 @@
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1200px) {
-
-}
+@media screen and (max-width: 1200px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 993px) {
-
-}
+@media screen and (max-width: 993px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 769px) {
-
-}
+@media screen and (max-width: 769px) {}
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 577px) {
-
-}
+@media screen and (max-width: 577px) {}

@@ -9,6 +9,40 @@
 30pt = 40px = 2.5rem
  */
 
+
+:root {
+    --violeta: #280e3f;
+    --amarillo: #fdce00;
+    --naranjita: #fdad00;
+    --blanco: #ffffff;
+}
+
+.modoclaro {
+    background-color: var(--blanco) !important;
+}
+
+.modooscuro {
+    background-color: var(--violeta) !important;
+}
+
+/* PARA DESPUÉS */
+
+
+
+
+
+
+
+.input {
+    background-color: rgba(253, 173, 0, 0.08);
+    border-color: #280e3f;
+}
+
+textarea {
+    background-color: rgba(253, 173, 0, 0.08);
+    border-color: #280e3f;
+}
+
 @font-face {
     font-family: 'Slackey';
     src: url(./Slackey-Regular.ttf);
@@ -58,6 +92,10 @@ header {
     background-color: rgb(40, 14, 63, 0.98);
 }
 
+
+
+
+
 .container-fluid {
     margin: 0;
     /* sin margen propio, ya lo da el header */
@@ -86,6 +124,7 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
 }
+
 
 .nav-link:hover {
     color: #fdce00;
@@ -191,10 +230,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
-
 
 
 .hero {
@@ -283,6 +321,7 @@ footer {
 
 
 
+
 /* ------------------------------------------------------------------------------------------- */
 
 /* -------------------------------------  MEDIA QUERY  --------------------------------------- */
@@ -297,9 +336,9 @@ footer {
 
     main {
         margin: 0% 5%;
-    font-size: 1rem;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+        font-size: 1rem;
+        margin-top: 20vh;
+        margin-bottom: 15vh;
 
     }
 
@@ -352,4 +391,18 @@ footer {
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 577px) {}
+@media screen and (max-width: 480px) {
+    .nav-link {
+        font-size: 1rem;
+        line-height: 0.1;
+    }
+
+    #margfooter {
+        margin-left: 5%;
+    }
+
+    h2 {
+        margin-top: 5vh;
+    }
+
+}

@@ -1,47 +1,162 @@
 main {
-    margin-bottom: 0vh !important;
+  margin-bottom: 0vh !important;
 }
+
 footer {
-    margin-top: 0% !important;
+  margin-top: 0% !important;
+}
+
+h2 {
+  margin-top: 0%;
 }
 
 
 
 
 
-.hero{
-    position: relative;
-    overflow: hidden;
+.card {
+  box-shadow: inset -5px -5px 0 #fdad00;
+  border: 2px solid #fdad00;
+  border-radius: 15px;
 }
 
-.wave{
-    position: absolute;
-    inset: 0;
-    z-index: 0;
+/* .nav-tabs {
+    --bs-nav-tabs-border-width: 3px;
+    --bs-nav-tabs-border-color: #280e3f;
+    border-bottom: 3px solid #280e3f;
 }
 
-.content{
-    position: relative;
-    z-index: 1;
+.nav-tabs .nav-link.active {
+    border-bottom-color: 5px #ffffff !important;
+}
 
+ ACOMODAR PARA EL FINAL*/
+
+
+
+
+.nav-tabs .nav-link.active {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.nav-tabs .nav-link {
+  box-shadow: none !important;
+  filter: none !important;
 }
 
 
 
+
+
+
+
+
+
+.text-success {
+  color: #4bce00 !important;
+}
+
+
+main .nav-link {
+  color: #280e3f;
+  font-family: "Montserrat", sans-serif;
+  filter: drop-shadow(0);
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+main .navbar-brand img {
+  border-radius: 0;
+  filter: drop-shadow(0);
+}
+
+
+main .nav-link:hover {
+  color: #280e3f;
+  transform: translateY(0px);
+  cursor: pointer;
+}
+
+
+.form-check {
+  width: 100%;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.btn-warning:hover {
+  background-color: rgba(253, 173, 0, 0.08);
+  color: #fdad00;
+  font-weight: 700;
+  border: 2px solid #fdad00;
+}
+
+.btn-success:hover {
+  background-color: rgb(75, 206, 0, 0.08);
+  color: #4bce00;
+  font-weight: 700;
+  border: 2px solid #4bce00;
+}
+
+.btn-danger:hover {
+  color: #fd2600;
+  background-color: rgb(253, 38, 0, 0.08);
+  border: 2px solid #fd2600;
+}
+
+
+
+.btn-warning {
+  background-color: rgba(253, 173, 0, 0.08);
+  color: #fdad00;
+  font-weight: 700;
+  border: 2px solid #fdad00;
+}
+
+.btn-success {
+  background-color: rgb(75, 206, 0, 0.08);
+  color: #4bce00;
+  font-weight: 700;
+  border: 2px solid #4bce00;
+}
+
+.btn-danger {
+  color: #fd2600;
+  background-color: rgb(253, 38, 0, 0.08);
+  border: 2px solid #fd2600;
+}
+
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin-top: 25vh;
+}
 
 
 
 
 section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
+
 
 section .wave {
   position: absolute;
@@ -100,82 +215,6 @@ section .wave span:nth-child(3) {
 
 
 
-
-
-
-
-
-/* FORMULARIO */
-form {
-  color: aliceblue;
-  float: right;
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  width: 48%;
-  color: #EB008B;
-  border-radius: 15PX;
-  border-color: aliceblue;
-  font-weight: bolder;
-}
-
-.boton {
-  display: inline-block;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-evenly;
-}
-
-fieldset {
-  width: 0 auto;
-  margin: 2% 1%;
-  /* From https://css.glass */
-  background: rgba(235, 0, 139, 0.5);
-  border-radius: 16px;
-}
-
-label {
-  display: inline-block;
-}
-
-select {
-  color: #EB008B;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-color: aliceblue;
-  margin-left: 3%;
-}
-
-fieldset ::placeholder {
-  color: #EB008B;
-}
-
-fieldset input,
-fieldset textarea {
-  color: #EB008B;
-  padding-left: 30px;
-  border-radius: 15px;
-  border-color: aliceblue;
-}
-
-fieldset textarea {
-  resize: none;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.colform {
-  display: flex;
-  margin-top: 3%;
-
-  input {
-    padding-left: 0px;
-  }
-}
-
-
 /* ------------------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------------------------------- */
@@ -207,4 +246,8 @@ fieldset textarea {
 
 /* ------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 577px) {}
+@media screen and (max-width: 577px) {
+  #myTab {
+    width: 50%;
+  }
+}

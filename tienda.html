@@ -14,6 +14,7 @@
     <link rel="icon" href="./imagenes/3_cerveza.svg"> <!-- FAVICON -->
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./tienda.css">
+
 </head>
 
 <body>
@@ -65,43 +66,103 @@
         </div>
 
         <main class="content">
-            <h2>COMPRAR ENTRADAS</h2>
 
-            <div class="container">
-                <div class="container col-md-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="paso1-tab" data-bs-toggle="tab"
-                                data-bs-target="#paso1-tab-pane" type="button" role="tab" aria-controls="paso1-tab-pane"
-                                aria-selected="true">Paso n°1</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="paso2-tab" data-bs-toggle="tab"
-                                data-bs-target="#paso2-tab-pane" type="button" role="tab" aria-controls="paso2-tab-pane"
-                                aria-selected="false">Paso
-                                n°2</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="paso3-tab" data-bs-toggle="tab"
-                                data-bs-target="#paso3-tab-pane" type="button" role="tab" aria-controls="paso3-tab-pane"
-                                aria-selected="false">Paso
-                                n°3</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="paso1-tab-pane" role="tabpanel"
-                            aria-labelledby="paso1-tab" tabindex="0">1</div>
-                        <div class="tab-pane fade" id="paso2-tab-pane" role="tabpanel" aria-labelledby="paso2-tab"
-                            tabindex="0">
-                            2</div>
-                        <div class="tab-pane fade" id="paso3-tab-pane" role="tabpanel" aria-labelledby="paso3-tab"
-                            tabindex="0">
-                            3</div>
+
+
+            <h2 class="mb-4">COMPRAR ENTRADAS</h2>
+            <div class="container-fluid">
+                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="paso1-tab" data-bs-toggle="tab"
+                            data-bs-target="#paso1-tab-pane">
+                            Paso N°1
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="paso2-tab" data-bs-toggle="tab" data-bs-target="#paso2-tab-pane">
+                            Paso N°2
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="paso3-tab" data-bs-toggle="tab" data-bs-target="#paso3-tab-pane">
+                            Paso N°3
+                        </button>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content">
+                    <!-- PASO 1 -->
+                    <div class="tab-pane fade show active" id="paso1-tab-pane">
+                        <div class="card p-4">
+                            <h3>Entrada General</h3>
+                            <h3 class="text-success">$ 10.000</h3>
+                            <div class="d-flex align-items-center gap-3 mt-4">
+                                <button class="btn btn-danger" onclick="cambiarCantidad(-1)">-</button>
+                                <h2 id="cantidad">1</h2>
+                                <button class="btn btn-success" onclick="cambiarCantidad(1)">+</button>
+                            </div>
+                            <hr>
+                            <h4>Total: <span id="total">$ 10.000</span></h4>
+                            <button class="btn btn-warning mt-4 mb-4" onclick="siguientePaso('paso2-tab')">
+                                Continuar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PASO 2 -->
+                    <div class="tab-pane fade" id="paso2-tab-pane">
+                        <div class="card p-4">
+                            <h3>Elegí el método de pago</h3>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" name="pago" checked>
+                                <label class="form-check-label">
+                                    💳 Tarjeta de Crédito
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pago">
+                                <label class="form-check-label">
+                                    💳 Tarjeta de Débito
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pago">
+                                <label class="form-check-label">
+                                    🏦 Transferencia Bancaria
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="pago">
+                                <label class="form-check-label">
+                                    💰 Mercado Pago
+                                </label>
+                            </div>
+                            <button class="btn btn-warning mt-4 mb-4" onclick="siguientePaso('paso3-tab')">
+                                Continuar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PASO 3 -->
+
+                    <div class="tab-pane fade" id="paso3-tab-pane">
+                        <div class="card p-4 text-center">
+                            <h3>Resumen de compra</h3>
+                            <hr>
+                            <h4>Cantidad de entradas: <span id="resumenCantidad"><strong>1</strong></span></h4>
+                            <h4 class="mt-2">Total a pagar</h4>
+                            <h2 id="resumenTotal">$ 10.000</h2>
+                            <button class="btn btn-success btn-lg mt-4 mb-4">
+                                Confirmar Compra
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
 
+
+        </main>
     </section>
 
 
@@ -111,7 +172,7 @@
     <!-- ------------------------------------------------------------------------------ -->
     <footer>
         <div class="container mt-5">
-            <div class="row justify-content-between gy-4">
+            <div id="margfooter" class="row justify-content-between gy-4">
                 <div class="col-6 col-md-3">
                     <a target="_blank"
                         href="https://www.instagram.com/fiestadelacerveza_santaanita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
@@ -152,9 +213,11 @@
         </div>
     </footer>
 
+    <script src="./tienda.js"></script> <!-- JAVASCRIPT -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> <!-- JAVASCRIPT + bootstrap -->
 </body>
 
 </html>
