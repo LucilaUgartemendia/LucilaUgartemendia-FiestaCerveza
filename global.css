@@ -15,6 +15,34 @@
     --amarillo: #fdce00;
     --naranjita: #fdad00;
     --blanco: #ffffff;
+
+    /* ----- Variables responsive ----- */
+    --header-h: 5.3rem;
+    /* alto del header fijo (medido: ~85px en celular, ~98px desde 576px) */
+    --gutter: 1.25rem;
+    /* margen lateral de la página */
+    --maxw: 1400px;
+    /* ancho máximo del contenido en pantallas enormes */
+}
+
+/* margen lateral y alto de header según el tamaño de pantalla */
+@media (min-width: 576px) {
+    :root {
+        --gutter: 6%;
+        --header-h: 6.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --gutter: 8%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --gutter: 10%;
+    }
 }
 
 .modoclaro {
@@ -46,19 +74,28 @@ textarea {
 @font-face {
     font-family: 'Slackey';
     src: url(./Slackey-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Montserrat';
     src: url(./Montserrat-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+/* Bootstrap 5.0.2 no trae esta utilidad (se agregó en 5.3) y la grilla la usa */
+.object-fit-cover {
+    object-fit: cover;
 }
 
 
 main {
-    margin: 0% 10%;
-    font-size: 1.3rem;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+    /* ancho = pantalla menos los márgenes laterales, y nunca más que --maxw */
+    width: calc(100% - 2 * var(--gutter));
+    max-width: var(--maxw);
+    /* arriba: deja lugar al header fijo + un respiro; abajo: respiro antes del footer */
+    margin: calc(var(--header-h) + clamp(1.5rem, 6vh, 4rem)) auto clamp(3rem, 12vh, 8rem);
+    font-size: clamp(1rem, 0.94rem + 0.4vw, 1.3rem);
 }
 
 
@@ -78,6 +115,25 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    /* evita scroll horizontal por elementos de ancho completo (100vw) */
+    overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+    body {
+        overflow-x: clip;
+    }
+}
+
+/* imágenes y videos nunca más anchos que su contenedor */
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
 }
 
 
@@ -88,7 +144,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1% 10%;
+    padding: 0.75rem max(var(--gutter), calc((100% - var(--maxw)) / 2));
     background-color: rgb(40, 14, 63, 0.98);
 }
 
@@ -105,15 +161,37 @@ header {
 }
 
 
+.navbar-brand {
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
 .navbar-brand img {
+    width: clamp(105px, 24vw, 135px);
     border-radius: 0;
     filter: drop-shadow(0 5px 10px rgb(8, 2, 14));
+}
+
+/* botón hamburguesa: área táctil de 44px o más */
+.navbar-toggler {
+    margin: 0 0 0 auto;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler i {
+    font-size: 2rem;
+    line-height: 1;
 }
 
 .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: clamp(1rem, 2.4vw, 2.5rem);
 }
 
 .nav-link {
@@ -123,6 +201,11 @@ header {
     letter-spacing: 1px;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+header .nav-link {
+    /* igual al original (1.5rem) en pantallas grandes; se achica un poco en tablets */
+    font-size: clamp(1.05rem, 0.55rem + 1.3vw, 1.5rem);
 }
 
 
@@ -181,9 +264,10 @@ img {
 /* ------------------------------------------------------------------------------------------- */
 /* CON AYUDA DE CHAT GPT */
 h1 {
-    font-size: 2.5rem;
+    font-size: clamp(1.3rem, 0.9rem + 3vw, 2.5rem);
     font-weight: 900;
     text-align: center;
+    --ls-pico: 2.5vw;
     animation: estira 3s ease-in-out 0.8s 1 forwards;
 }
 
@@ -193,7 +277,7 @@ h1 {
     }
 
     50% {
-        letter-spacing: 2.5vw;
+        letter-spacing: var(--ls-pico);
         filter: blur(3px);
     }
 
@@ -212,7 +296,7 @@ h1:hover {
     }
 
     50% {
-        letter-spacing: 2.5vw;
+        letter-spacing: var(--ls-pico);
         filter: blur(3px);
     }
 
@@ -225,36 +309,42 @@ h1:hover {
 
 h2 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 1rem + 1.8vw, 2rem);
     font-weight: 900;
+    overflow-wrap: break-word;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 1rem + 0.8vw, 1.5rem);
     font-weight: 700;
 }
 
 
+/* Imagen de fondo (la usan inicio y tienda). El "fixed" falla en celulares/tablets
+   (iOS lo ignora o lo agranda), por eso solo se usa en pantallas grandes con mouse. */
 .hero {
-    height: 78vh;
+    min-height: 78vh;
+    min-height: 78svh;
 
     background-image: url(./imagenes/fotoFiesta4.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 3%;
+    background-attachment: scroll;
+    margin-bottom: clamp(1rem, 3vw, 3rem);
+}
+
+@media (min-width: 992px) and (hover: hover) {
+    .hero {
+        background-attachment: fixed;
+    }
 }
 
 
 
 .heroimg {
     border-radius: 0%;
-    position: absolute;
-    top: 25vh;
     z-index: 800;
-    width: 40vw;
-    margin: 0% 20%;
 
     -webkit-animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -302,8 +392,8 @@ h3 {
 
 /* ------------------------------------------------------------------------------------------- */
 footer {
-    margin-top: 15%;
-    padding: 2% 0%;
+    margin-top: clamp(3rem, 10vw, 9rem);
+    padding: clamp(1.5rem, 3vw, 2.5rem) 0;
     background-color: #280e3f;
     color: #ffffff;
     font-size: 1rem;
@@ -314,8 +404,19 @@ footer {
 
     p {
         text-align: center;
-        line-height: 1;
+        line-height: 1.5;
         margin-bottom: 0.5rem;
+    }
+
+    /* íconos redes: el ícono queda alineado a la primera línea y el texto no se "cae" debajo */
+    .row a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.4rem 0;
+    }
+
+    .row a img {
+        flex: none;
     }
 }
 
@@ -328,81 +429,54 @@ footer {
 
 /* ------------------------------------------------------------------------------------------- */
 
-
-@media (max-width:480px) {
-    h1 {
-        font-size: 1rem;
+/* Menú hamburguesa (menos de 992px): links grandes y fáciles de tocar */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        max-height: calc(100vh - var(--header-h) - 1rem);
+        overflow-y: auto;
     }
 
-    main {
-        margin: 0% 5%;
-        font-size: 1rem;
-        margin-top: 20vh;
-        margin-bottom: 15vh;
-
+    .navbar-nav {
+        align-items: stretch;
+        gap: 0;
+        padding: 0.5rem 0 0.75rem;
+        text-align: center;
     }
 
-    .heroimg {
-        width: 70vw;
-        margin: 0%;
-    }
-
-    .hero {
-        margin-bottom: 5%;
-    }
-
-    .contenido {
-        width: 100%;
-    }
-
-    .contenedor {
+    header .nav-link {
         display: block;
+        padding: 0.8rem 1rem;
+        font-size: 1.25rem;
     }
 }
 
-/* ------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-
-/* ------------------------------------------------------------------------------------------- */
-
-/* --------------------------          MEDIA QUERIES        ---------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 1200px) {}
-
-/* ------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 993px) {}
-
-/* ------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 769px) {}
-
-/* ------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 480px) {
-    .nav-link {
-        font-size: 1rem;
-        line-height: 0.1;
-    }
-
-    #margfooter {
-        margin-left: 5%;
+@media (max-width: 576px) {
+    h1 {
+        --ls-pico: 0.8vw;
     }
 
     h2 {
         margin-top: 5vh;
     }
+}
 
+/* Para quien tiene activada la opción "reducir movimiento" en su dispositivo */
+@media (prefers-reduced-motion: reduce) {
+
+    h1,
+    h1:hover,
+    .heroimg {
+        animation: none;
+    }
+
+    * {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dispositivos táctiles: botones con área de toque cómoda */
+@media (pointer: coarse) {
+    .btn {
+        min-height: 2.75rem;
+    }
 }
