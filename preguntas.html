@@ -111,6 +111,7 @@
                         <strong>¡Cuidado con los pozos de la ruta 20!</strong> Manejar con precaución.
                     </div>
                 </div>
+            </div>
         </section>
 
 
@@ -119,7 +120,7 @@
         <!-- ------------------------------------------------------------------------------ -->
 
 
-        <section class="row p-3 justify-content-between" style="margin-bottom: 15%;">
+        <section class="row p-3 justify-content-between" style="margin-bottom: clamp(2rem, 8vw, 6rem);">
 
             <div class="col-md-6 col-12  mt-5">
                 <h2>preguntas frecuentes</h2>
@@ -211,7 +212,7 @@
                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
                             <div class="accordion-body">
                                 <strong>POR SUPUESTO!!!</strong>
-                                <video autoplay loop width="100%" style="border-radius: 20px;"
+                                <video autoplay loop muted playsinline width="100%" style="border-radius: 20px;"
                                     src="./imagenes/espiche.mp4" alt="espiche de cerveza"></video>
                             </div>
                         </div>
@@ -228,28 +229,28 @@
 
         <section class="row  justify-content-between">
             <h2>REALIZAR UNA CONSULTA</h2>
-            <div class="col-md-6 col-12">
+            <div class="col-lg-6 col-12">
                 <h3>Información personal</h3>
                 <div class="input-group">
                     <span class="input-group-text">Nombre y Apellido</span>
-                    <input class="input" type="text" aria-label="First name" class="form-control" placeholder="Nombre">
-                    <input class="input" type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+                    <input class="input form-control" type="text" aria-label="First name" placeholder="Nombre">
+                    <input class="input form-control" type="text" aria-label="Last name" placeholder="Apellido">
                 </div>
                 <div class="input-group mt-2">
                     <span class="input-group-text">Correo Electrónico</span>
-                    <input class="input" type="email" id="exampleFormControlInput1" class="form-control"
+                    <input class="input form-control" type="email" id="exampleFormControlInput1"
                         placeholder="correo@gmail.com">
                 </div>
 
                 <div class="row justify-content-between mt-3">
-                    <h3 class="col-md-6">¿Por dónde nos contactamos?</h3>
-                    <div class="form-check col-md-3 col-6">
-                        <input class="input" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Whatsapp</label>
+                    <h3 class="col-12 col-xxl-6">¿Por dónde nos contactamos?</h3>
+                    <div class="form-check col-6 col-xxl-3">
+                        <input class="input form-check-input" type="checkbox" value="" id="contactoWhatsapp">
+                        <label class="form-check-label" for="contactoWhatsapp">Whatsapp</label>
                     </div>
-                    <div class="form-check col-md-3 col-6">
-                        <input class="input" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Mail</label>
+                    <div class="form-check col-6 col-xxl-3">
+                        <input class="input form-check-input" type="checkbox" value="" id="contactoMail">
+                        <label class="form-check-label" for="contactoMail">Mail</label>
                     </div>
                 </div>
 
@@ -262,7 +263,7 @@
                 <button type="submit" class="btn btn-primary mt-3">Enviar</button>
             </div>
 
-            <div class="col-md-5 col-12">
+            <div class="col-lg-5 col-12 mt-5 mt-lg-0">
                 <h2>Motivos para contactarse</h2>
                 <ul>
                     <li>Quiero poner mi puesto de cerveza artesanal</li>
