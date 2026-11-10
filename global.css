@@ -453,20 +453,6 @@ footer {
     }
 }
 
-/* Para quien tiene activada la opción "reducir movimiento" en su dispositivo */
-@media (prefers-reduced-motion: reduce) {
-
-    h1,
-    h1:hover,
-    .heroimg {
-        animation: none;
-    }
-
-    * {
-        scroll-behavior: auto;
-    }
-}
-
 /* Dispositivos táctiles: botones con área de toque cómoda */
 @media (pointer: coarse) {
     .btn {
