@@ -264,10 +264,9 @@ img {
 /* ------------------------------------------------------------------------------------------- */
 /* CON AYUDA DE CHAT GPT */
 h1 {
-    font-size: clamp(1.3rem, 0.9rem + 3vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
-    --ls-pico: 2.5vw;
     animation: estira 3s ease-in-out 0.8s 1 forwards;
 }
 
@@ -277,7 +276,7 @@ h1 {
     }
 
     50% {
-        letter-spacing: var(--ls-pico);
+        letter-spacing: 2.5vw;
         filter: blur(3px);
     }
 
@@ -296,7 +295,7 @@ h1:hover {
     }
 
     50% {
-        letter-spacing: var(--ls-pico);
+        letter-spacing: 2.5vw;
         filter: blur(3px);
     }
 
@@ -309,42 +308,36 @@ h1:hover {
 
 h2 {
     text-transform: uppercase;
-    font-size: clamp(1.4rem, 1rem + 1.8vw, 2rem);
+    font-size: 2rem;
     font-weight: 900;
-    overflow-wrap: break-word;
 }
 
 h3 {
-    font-size: clamp(1.15rem, 1rem + 0.8vw, 1.5rem);
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 
-/* Imagen de fondo (la usan inicio y tienda). El "fixed" falla en celulares/tablets
-   (iOS lo ignora o lo agranda), por eso solo se usa en pantallas grandes con mouse. */
 .hero {
-    min-height: 78vh;
-    min-height: 78svh;
+    height: 78vh;
 
     background-image: url(./imagenes/fotoFiesta4.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    margin-bottom: clamp(1rem, 3vw, 3rem);
-}
-
-@media (min-width: 992px) and (hover: hover) {
-    .hero {
-        background-attachment: fixed;
-    }
+    background-attachment: fixed;
+    margin-bottom: 3%;
 }
 
 
 
 .heroimg {
     border-radius: 0%;
+    position: absolute;
+    top: 25vh;
     z-index: 800;
+    width: 40vw;
+    margin: 0% 20%;
 
     -webkit-animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: heroimg 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
